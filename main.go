@@ -8,6 +8,5 @@ import (
 
 func main() {
 	proxy := goproxy.NewProxyHttpServer()
-	proxy.Verbose = true
 	log.Fatal(http.ListenAndServe(":9000", proxy))
 }
